@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Events Explorer </title>
+</head>
+<body>
+   <h1>Making The Background Yellow</h1>
+   <button id="make-yellow">Make Yellow</button>
+
+   <script>
+    const makeYellowButton = document.getElementById('make-yellow');
+    makeYellowButton.addEventListener('click',makeYellow)
+
+    function makeYellow(){
+        document.body.style.backgroundColor = 'yellow'
+    }
+   </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Green Button</title>
+</head>
+
+<body>
+    <h1>This Is The Page Where you Can Change The Website Backgroun To Desire Colore By Clicking Your Button</h1>
+    <button id="make-green">Make Green</button>
+    <button id="make-blue">Make Blue</button>
+    <button id="make-red">Make Red</button>
+    <button id="make-golden">Make GoldenRod</button>
+
+    <script>
+
+        //MAKING THE BACKGROUND GOLDEN
+        const makeGoldenRod = document.getElementById('make-golden');
+        makeGoldenRod.addEventListener('click', makeGolden)
+
+        function makeGolden(){
+            document.body.style.backgroundColor = 'orange'
+        }
+        // MAKING THE BACKGROUND RED
+        const makeRedButton = document.getElementById('make-red');
+        makeRedButton.addEventListener('click', makeRed)
+
+        function makeRed() {
+            document.body.style.backgroundColor = 'red'
+        }
+        // MAKING THE BACKGROUN BLUE
+        const makeBlueButton = document.getElementById('make-blue');
+        makeBlueButton.addEventListener('click', makeBlue)
+
+        function makeBlue() {
+            document.body.style.backgroundColor = 'blue';
+        }
+
+        // MAKING THE BACKGROUND GREEN 
+        const makeGreenButton = document.getElementById('make-green');
+        makeGreenButton.addEventListener('click', makeGreen)
+
+        function makeGreen() {
+            document.body.style.backgroundColor = 'green'
+        }
+    </script>
+</body>
+
+</html>
